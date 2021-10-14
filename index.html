@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./styles/min-styles.css"/>
+	<link rel="stylesheet" type="text/css" href="./styles/min-mediascreen.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<title>Landing Page</title>
+</head>
+	<body>
+		<div class="loader-wrapper">
+			<span class="loader">
+				<iframe src="https://giphy.com/embed/hUL5R6B4HYoXADpnvJ"  frameBorder="0"  allowFullScreen></iframe>
+				<h2>Cooking Up The Site...</h2>
+			</span>
+		</div>
+		<header id='header'>
+			<div class="logo-container">
+				<img src="./images/Originals logo black.png" alt="logo" width="70px" height="100px">
+
+			</div>
+			<nav id='nav-links'>
+				<button  id="nav-link" onclick= "window.location.href='https://www.originalsfood.nl/'">Order</button>
+				<button data-for= 'aboutus' id="nav-link" onclick= "window.location.href='#section2'">About Us</button>
+				<button data-for= 'contactus' id="nav-link" onclick= "window.location.href='#section2'">Contact Us</button>
+				<button data-for= 'findus' id="nav-link" onclick= "window.location.href='#section2'">Find Us</button>
+					
+			</nav>
+
+			<div class="socials">
+				<div class="burgerdiv">
+				<button class= 'burger' data-for='transparent'>test</button>
+				</div>
+				
+				<div class="socialdiv">
+				<input class= 'socialinp' type = 'image' src="./images/facebook.svg" alt="socials">
+				<ul>	
+					<li><a href='#'><img src ='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c5c450d3399eea5623e5c6_facebook-app-symbol.png' style = "width:5vh; height:5vh;"/></a></li>
+					<li><a href='#'><img src ='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c5c4d0b14d27fbf8f09602_instagram.png' style = "width:5vh; height:5vh;"/></a></li>
+					
+				</ul>	
+			</div>	
+			</div>
+	
+		</header>
+		<div class="filler_header"></div>
+		
+
+		<div class="menu-div">
+		<div class="swiper-container menu-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" id= 'menu-slide'>
+					<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6122186352b92771d304fa16_Menu%20design%202020%20A3%20(NL)-01.png">
+					<img id = 'db-view' src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6122186552b9273c3604fa17_Menu%20design%202020%20A3%20(NL)-02.png">
+				</div> 
+				<div class="swiper-slide" id= 'menu-slide'>
+					<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/612218656eeeddb7cd898a3c_Menu%20design%202020%20A3%20(NL)-03.png">
+					<img id = 'db-view' src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/61221865411cba774cf61827_Menu%20design%202020%20A3%20(NL)-04.png"> 
+			  	</div>
+				<div class="swiper-slide" id= 'menu-slide'>	
+					<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/61221865770f02c8d34963bc_Menu%20design%202020%20A3%20(NL)-05.png">
+					<img id = 'db-view' src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/61221863e6fa2a172da237cb_Menu%20design%202020%20A3%20(NL)-06.png"> 
+				</div>
+			</div>
+			</div>
+			<div class="swiper-button-prev" id="menu-prev"></div>
+			<div class="swiper-button-next" id="menu-next"></div>
+			
+			<div class='menu-closer'>
+				<p>Click here to close</p>
+			</div>
+
+		  </div>
+
+		<script>
+		  var swiper = new Swiper('.swiper-container', {
+			loop: true,	
+			
+			navigation: {
+			  nextEl: '.swiper-button-next',
+			  prevEl: '.swiper-button-prev',
+			},
+			scrollbar: {
+			  el: '.swiper-scrollbar',
+			},
+		  });
+		</script>
+
+
+
+
+		
+			<div id="transparent">
+				<div class="closediv">
+				<button class='burger_in' data-for='transparent'>test</button>
+				</div>
+				
+				<div id='burgermenu'>
+				<div id='burgerwrapper'>
+				<img src="./images/Originals logo black.png" alt="logo" width="70px" height="100px">
+					<div class="burgerbuttons">
+						<button  id="burger-link" onclick= "window.location.href='https://www.originalsfood.nl/'">Order</button>
+						<button data-for= 'aboutus' id="burger-link" onclick= "window.location.href='#section2'">About Us</button>
+						<button data-for= 'contactus' id="burger-link" onclick= "window.location.href='#section2'">Contact Us</button>
+						<button data-for= 'findus' id="burger-link" onclick= "window.location.href='#section2'">Find Us</button>
+					</div>
+				<div class="cta-burger">
+					<button class="menu">Our Menu</button>
+					<button class="order"onclick= "window.location.href='https://www.originalsfood.nl/'">Order Now</button>
+				</div>
+				</div>	
+				</div>
+			</div>
+			<main>
+			<section class="section0">
+				<div class="video"></div>
+			</section>
+			<section class="presentation">
+				<div class="introduction">
+					<div class="intro-text">
+						<h1>Redefining the Wok</h1>
+						<p>Taste the beauty of the wok 
+						with our Original way
+						</p>
+					</div>
+					<div class="cta">
+						<button class="menu">Our Menu</button>
+						<button class="order"onclick= "window.location.href='https://www.originalsfood.nl/'">Order Now</button>
+					</div>
+				</div>
+
+				<div class="swiper-container">
+
+					<div class="swiper-wrapper">
+	 			
+	 					<div class="swiper-slide" id= 'slide1'>
+							<div class="box-wrapper">
+							<div class="box">
+							  <img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e8b743d9478fb10d46c6_Cloudy%20Tofu%20(1)%20(1).jpg">
+							  <span>CSS</span>
+							</div>
+							<div class="box">
+							  <img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg">
+							  <span>Image</span>
+							</div>
+							<div class="box">
+							  <img src="https://source.unsplash.com/1000x804">
+							  <span>Hover</span>
+							</div>
+							<div class="box">
+							  <img src="https://source.unsplash.com/1000x806">
+							  <span>Effect</span>
+							</div>
+						</div>
+						  </div> 
+	  					<div class="swiper-slide" id= 'slide2'>
+							<figure class="snip1273">
+							  <img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg" >
+							  <figcaption>
+									<h3>Gunther Beard</h3>
+									<p>Given that sooner or later we're all just going to die, what's the point of learning about integers?</p>
+							  </figcaption>
+						  </figure>
+					  </div>
+	  					<div class="swiper-slide" id= 'slide3'>	
+							<figure class="snip1273">
+								<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg" >
+								<figcaption>
+									  <h3>Gunther Beard</h3>
+									  <p>Given that sooner or later we're all just going to die, what's the point of learning about integers?</p>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="swiper-button-prev" id="swiper-prev"></div>
+					<div class="swiper-button-next" id="swiper-next"></div>
+
+  				</div>
+
+				<script>
+				  var swiper = new Swiper('.swiper-container', {
+					loop: true,	
+					navigation: {
+					  nextEl: '.swiper-button-next',
+					  prevEl: '.swiper-button-prev',
+					},
+					scrollbar: {
+					  el: '.swiper-scrollbar',
+					},
+				  });
+				</script>
+												
+				</section>
+				<section id = 'section2'class="section2">
+					
+					<div class= "glass">
+						<div class='glasslinks'>
+							<div id='glass-link'>
+								<button id='glassbutton1' class='Active' data-box='gallerydiv'>Gallery</button> 
+								<button id='glassbutton2'  data-box='aboutus'>About Us</button>  		
+								<button id='glassbutton3'  data-box='contactus'>Contact Us</button> 
+								<button id='glassbutton4'  data-box='findus'>Find Us</button> 
+							
+								
+							</div>
+							<div class='extra' >
+								<button onclick= "window.location.href='https://www.originalsfood.nl/'">Order Now</button>
+							</div>
+						</div>
+						
+						<div id='cards'>
+								<div id="gallerydiv" class="Active">
+									<div id="column_wrapper" class="Active" >
+									<div id='column1' class = "Active">
+										<figure class="snip1482" id='galfig1'>
+											<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+											<figcaption>
+										  	<h2>Cloudy <br> Tofu</h2>
+										  	<p>Tering lekkere<br> tofu neef</p>
+											</figcaption>
+									  	</figure>
+									  	<figure class="snip1482" id='galfig2'>
+											<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+											<figcaption>
+												<h2>Cloudy <br> Tofu</h2>
+												<p>Tering lekkere<br> tofu neef</p>
+											</figcaption>
+									  	</figure>
+									  <figure class="snip1482" id='galfig3'>
+										<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+										<figcaption>
+											<h2>Cloudy <br> Tofu</h2>
+											<p>Tering lekkere<br> tofu neef</p>
+										</figcaption>
+									  </figure>
+									  </div>
+
+									  <div id='column2' class="Active">
+									  <figure class="snip1482" id='galfig4'>
+										<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+										<figcaption>
+											<h2>Cloudy <br> Tofu</h2>
+											<p>Tering lekkere<br> tofu neef</p>
+										</figcaption>
+									  </figure>
+									  <figure class="snip1482" id='galfig5'>
+										<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+										<figcaption>
+											<h2>Cloudy <br> Tofu</h2>
+											<p>Tering lekkere<br> tofu neef</p>
+										</figcaption>
+									  </figure>
+									  <figure class="snip1482" id='galfig6'>
+										<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+										<figcaption>
+											<h2>Cloudy <br> Tofu</h2>
+											<p>Tering lekkere<br> tofu neef</p>
+										</figcaption>
+									  </figure>
+									</div> 
+									
+								</div>
+								
+							</div>	
+							<div id="gallerydiv_mobile">
+								<div class="swiper-container2 Active">
+									<div class="swiper-wrapper Active" >
+									 
+										<div class="swiper-slide mobile Active">
+											<figure class="snip1482">
+												<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+												<figcaption>
+										  			<h2>Cloudy <br> Tofu</h2>
+										  			<p>Tering lekkere<br> tofu neef</p>
+												</figcaption>
+									  		</figure>
+											<figure class="snip1482">
+												<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+												<figcaption>
+													<h2>Cloudy <br> Tofu</h2>
+													<p>Tering lekkere<br> tofu neef</p>
+												</figcaption>
+											</figure>
+											<figure class="snip1482">
+												<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+												<figcaption>
+													<h2>Cloudy <br> Tofu</h2>
+													<p>Tering lekkere<br> tofu neef</p>
+												</figcaption>
+											</figure>
+										</div>
+
+									  <div class="swiper-slide mobile Active">
+										<figure class="snip1482">
+											<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+											<figcaption>
+												  <h2>Cloudy <br> Tofu</h2>
+												  <p>Tering lekkere<br> tofu neef</p>
+											</figcaption>
+										  </figure>
+										<figure class="snip1482">
+											<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+											<figcaption>
+												<h2>Cloudy <br> Tofu</h2>
+												<p>Tering lekkere<br> tofu neef</p>
+											</figcaption>
+										</figure>
+										<figure class="snip1482">
+											<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+											<figcaption>
+												<h2>Cloudy <br> Tofu</h2>
+												<p>Tering lekkere<br> tofu neef</p>
+											</figcaption>
+										</figure>	
+									  </div>
+
+									  <div class="swiper-slide mobile Active">
+										<figure class="snip1482">
+											<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+											<figcaption>
+												  <h2>Cloudy <br> Tofu</h2>
+												  <p>Tering lekkere<br> tofu neef</p>
+											</figcaption>
+										  </figure>
+										<figure class="snip1482">
+											<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+											<figcaption>
+												<h2>Cloudy <br> Tofu</h2>
+												<p>Tering lekkere<br> tofu neef</p>
+											</figcaption>
+										</figure>
+										<figure class="snip1482">
+											<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6048e743db11bf0b286a732c_black-pepper-beef-(1)-(1)_optimized.jpg"/>
+											<figcaption>
+												<h2>Cloudy <br> Tofu</h2>
+												<p>Tering lekkere<br> tofu neef</p>
+											</figcaption>
+										</figure>
+									  </div>
+									</div>
+								
+									<div class="swiper-button-prev Active"></div>
+									<div class="swiper-button-next Active"></div>
+								</div>
+							</div>
+							<script>
+								var gallery_swiper = new Swiper('.swiper-container2', {
+									spaceBetween: 35,
+									centeredSlides: true,
+									loop: true,	
+								  	navigation: {
+										nextEl: '.swiper-button-next',
+										prevEl: '.swiper-button-prev',},
+									});
+							  </script>
+								<div id='aboutus'>
+									<img src='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/5fdf2f0d60a0da19271705c5_Originals%20logo(final)-01%5B5489%5D.png'>
+									<p>Now this is a story all about how my life got twisted turned upside down</p>
+								</div>
+								<div id='contactus'>
+								
+									<div id='contact1' class='Active'>
+										<div class='contact_img Active'>
+										<img src='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c4feb3e74f6b7df71a554d_telephone.png'>
+										</div>
+										<div class="conact_p Active">
+										<p>020 337 8128</p>
+										</div>
+									</div>
+
+									<div id='contact2' class='Active'>
+										<div class="contact_img Active">
+										<img src='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c502289e78884dd76a9f52_telephone.png'>
+										</div>
+										<div class="contact_p Active">
+										<p>info@originalsfood.nl</p>
+										</div>
+									</div>
+									
+									<div id='contact3' class='Active'>
+										<div id='fb' class='Active'>
+											<div class="contact_img Active">
+												<img src='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c5c450d3399eea5623e5c6_facebook-app-symbol.png'>
+											</div>
+											<div class="contact_p Active">
+												<p>originalsfood_</p>
+											</div>
+										</div>
+										<div id='insta' class='Active'>
+											<div class="contact_img Active">
+												<img src='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c5c4d0b14d27fbf8f09602_instagram.png'>
+											</div>
+											<div class="contact_p Active">
+												<p>originalsfood</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div id='findus'>
+									<iframe loading="lazy"
+										src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCMeEWjA5gzpUQHbw_4GwC9_JNaxBhhoBQ&q=Originals,Amsterdam+1079CJ">
+									</iframe>
+								</div>
+								
+								</div>
+				</section>
+				<section class="section3">
+					<div class="footerwrapper">
+					<div class='footerlogo'>
+						 <img src='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/5fdf2f0d60a0da19271705c5_Originals%20logo(final)-01%5B5489%5D.png'/>
+					</div>
+					<div class='adresinfo'>
+						<h1>Adres</h1> 
+						<p>Uiterwaardenstraat 138<br>
+							1079CJ Amsterdam<br>
+							020 337 8128
+						</p>
+					</div>
+					<div class='footerlinks'>
+						<div id="footer-links">
+							<button class ="footer-link" id="footer-link1" onclick= "window.location.href='#'">Menu</button>
+							<button class ="footer-link" id="footer-link2" onclick= "window.location.href='https://www.originalsfood.nl/'">Order</button>	
+							<button data-for= 'gallerydiv' class ="footer-link" id="footer-link3" onclick= "window.location.href='#section2'">Gallery</button>
+							<button data-for= 'aboutus' class ="footer-link" id="footer-link4" onclick= "window.location.href='#section2'">About Us</button>
+							<button data-for= 'contactus' class ="footer-link" id="footer-link5" onclick= "window.location.href='#section2'">Contact Us</button>
+							<button data-for= 'findus' class ="footer-link" id="footer-link6" onclick= "window.location.href='#section2'">Find Us</button>
+						</div>
+					</div>
+					<div class='motto'>
+						<div class='mottotext'>
+						<img src ='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60ded13330af532bc34fed64_motto.png'/>
+						</div>
+						<div class='footer-socials'>
+						<a class = 'footer-social'  href="#"> 
+							<img src ='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c5c4d0b14d27fbf8f09602_instagram.png'/>
+						</a>
+						<a class = 'footer-social'  href="#"> 
+							<img src ='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c5c450d3399eea5623e5c6_facebook-app-symbol.png'/>
+						</a>
+						</div>
+					</div>
+				</div>
+
+				</section>
+		
+	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<script src="jquerylight.js"></script>
+			</main>			
+	</body>
+</html>
