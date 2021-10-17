@@ -1,0 +1,389 @@
+/* smallscreen display */
+@media screen and (max-width: 1150px) {
+  .presentation {
+    flex-direction: column;
+    z-index: 1;
+    justify-content: space-evenly;
+  }
+  .swiper-pagination-bullets {
+    left: 50% !important;
+    bottom: 0 !important;
+  }
+
+  .menu-closer {
+    top: 0;
+    height: 8vh;
+    z-index: 102;
+    text-align: center;
+  }
+  .menu-closer p {
+    display: block;
+    margin-top: 3%;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 500px;
+    top: 5%;
+  }
+  .snip1273 {
+    width: 65%;
+  }
+  .introduction {
+    margin-top: 30px;
+    text-align: center;
+    height: 50%;
+    z-index: 1;
+    flex: 0;
+  }
+  .nav-link {
+    font-size: 12px;
+    justify-content: space-between;
+    flex: 5;
+  }
+  .nav-links {
+    margin-left: 10px;
+  }
+  .logo-container {
+    flex: 0.5;
+  }
+
+  .socials {
+    flex: 0.5;
+    width: 20%;
+    height: 20%;
+  }
+
+  .intro-text {
+    font-size: 15px;
+  }
+  .intro-text h1 {
+    margin-top: 10px;
+    font-size: 40px;
+  }
+  .cta {
+    z-index: 1;
+  }
+  #db-view {
+    display: none;
+  }
+  .gallery-select {
+    bottom: 5%;
+    right: 50%;
+    width: 50%;
+    transform: translate(50%, 5%);
+  }
+  .cover {
+    z-index: 3;
+    height: 55%;
+    padding: 0%;
+  }
+  .box {
+    flex: 1 1 5%;
+  }
+  .box img {
+    height: calc(100% - 5vh);
+    transition: 0.5s;
+    object-fit: cover;
+    position: relative;
+    flex: 0.5;
+  }
+  .box > span {
+    transform: translateY(-10px);
+  }
+  .glass {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-size: 10px;
+    margin: 0.5rem;
+  }
+  .glasslinks {
+    display: flex;
+    flex: 0;
+    flex-direction: column;
+    border-radius: 2rem;
+  }
+  #glass-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: start;
+  }
+
+  #glass-link button {
+    font-size: 16px;
+    margin: 1rem 0rem;
+    padding: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  #gallerydiv figure {
+    text-align: center;
+  }
+  .extra {
+    display: none;
+  }
+  .snip1482 {
+    left: -5%;
+    top: 15%;
+    min-height: 200px;
+  }
+
+  .snip1482 h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .snip1482 p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .snip1482:hover img,
+  .snip1482.hover img {
+    width: 60%;
+    transform: translate(40%, 20%);
+  }
+
+  #contact1,
+  #contact2,
+  #contact3 {
+    width: 70%;
+  }
+  #aboutus {
+    height: 70%;
+    width: 80%;
+    transform: translate(-37.5%, 20%);
+  }
+  #findus iframe {
+    top: 15%;
+  }
+  .swiper-container {
+    margin-left: 0%;
+  }
+  div#swiper-prev {
+    left: 0%;
+  }
+  #menu-slide img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .snip1482:hover img,
+  .snip1482.hover img {
+    width: 50%;
+    transform: translate(40%, 20%);
+  }
+  #insta {
+    margin-top: 7%;
+  }
+
+  .contact_img img {
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 750px) {
+    nav {
+      display: none;
+    }
+
+    #findus iframe {
+      width: 90%;
+    }
+
+    .socials button.burger {
+      display: block;
+    }
+    .socials .burgerdiv {
+      display: block;
+    }
+
+    .socialdiv {
+      display: none;
+    }
+
+    header {
+      position: fixed;
+      align-items: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .socials {
+      margin-right: auto;
+      margin-top: 0;
+    }
+    .filler_header {
+      display: block;
+    }
+
+    .logo-container img {
+      height: 130px;
+      width: 90px;
+      margin-top: 20px;
+      margin-right: 5%;
+    }
+    .glass {
+      min-width: 300px;
+    }
+    .slider {
+      width: 100%;
+    }
+    .cover {
+      min-height: 150px;
+    }
+    #row1,
+    #row2,
+    #row3 {
+      width: 80%;
+    }
+    #gallerydiv {
+      align-items: center;
+    }
+    #inputs input {
+      display: block;
+    }
+    .snip1482 {
+      height: 200px;
+    }
+    .snip1482 img {
+      width: 250px;
+    }
+    .section3 {
+      height: 100%;
+    }
+    .footerwrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+    .footerlogo img {
+      margin-top: 2%;
+      width: 25%;
+      height: 100%;
+      margin-left: -3%;
+    }
+    .motto img {
+      width: 50%;
+      height: auto;
+      margin-left: 10%;
+      margin-top: -9%;
+    }
+    .footer-socials {
+      margin-top: -15%;
+      margin-left: 15%;
+    }
+    .footer-socials img {
+      margin-left: 5px;
+      height: 33px;
+      width: 25px;
+    }
+
+    @media screen and (max-width: 550px) {
+      #swiper-next {
+        top: 60%;
+        right: -5% !important;
+      }
+      #swiper-prev {
+        top: 60%;
+        left: -5% !important;
+      }
+      .intro-text h1 {
+        font-size: 30px;
+      }
+      .snip1273 {
+        width: 110%;
+      }
+      .menu-closer {
+        top: 0;
+        height: 8vh;
+        z-index: 102;
+        text-align: center;
+      }
+
+      .intro-text p {
+        margin-top: 4%;
+        font-size: 13px;
+      }
+      .introduction {
+        flex: 0.5;
+        margin: 0px 0px -50px 0px;
+      }
+      .navigation-manual {
+        top: 70%;
+      }
+      .glass {
+        flex: 1 2 10%;
+      }
+
+      .adresinfo {
+        margin-left: 0%;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      .menu,
+      .order {
+        margin: 0px 0px 0px 0px;
+        width: 45%;
+      }
+      .intro-text h1 {
+        font-size: 25px;
+      }
+      .intro-text p {
+        font-size: 12px;
+      }
+      .snip1482 h2 {
+        font-size: 20px;
+        line-height: 18px;
+      }
+      .snip1482 p {
+        font-size: 15px;
+        line-height: 14px;
+      }
+
+      .snip1482 figcaption {
+        transform: translateY(-140%);
+      }
+      .presentation {
+        height: 600px;
+      }
+      .swiper-container {
+        top: 15%;
+        width: 100%;
+        min-height: 300px;
+        height: 300px;
+      }
+      .menu-swiper {
+        top: 2%;
+        width: 90vh;
+      }
+      .menu-slide img {
+        width: 40%;
+      }
+    }
+
+    @media screen and (max-height: 630px) {
+      .intro-text h1 {
+        font-size: 25px;
+      }
+      .introduction {
+        margin-top: -30px;
+      }
+      .cta {
+        margin-top: -30px;
+      }
+      .menu,
+      .order {
+        width: 35%;
+      }
+      .navigation-manual {
+        top: 85%;
+      }
+
+      #gallerydiv img {
+        margin-top: 0;
+      }
+    }
+  }
+}
