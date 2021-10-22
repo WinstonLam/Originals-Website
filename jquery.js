@@ -14,6 +14,19 @@ $(function () {
 });
 
 $(function () {
+  $(".cta-burger").on("click", ".menu", function () {
+    $("main").css("filter", "blur(1rem) brightness(70%)");
+    $("header").css("filter", "blur(1rem) brightness(70%)");
+    $(".swiper-container.menu-swiper").addClass("selected");
+    $(".menu-closer").addClass("selected");
+    $("#menu-prev").addClass("selected");
+    $("#menu-next").addClass("selected");
+  });
+});
+
+
+
+$(function () {
   $(".menu-div").on("click", ".menu-closer", function () {
     $("main").css("filter", "blur(0) brightness(100%)");
     $("header").css("filter", "blur(0) brightness(100%)");
