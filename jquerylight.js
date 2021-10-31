@@ -45,7 +45,7 @@ function dataBox() {
   $(function () {
     $(".cta").on("click", ".menu", function () {
       $("main").css("filter", "blur(1rem) brightness(70%)"),
-        $("header").css("filter", "blur(1rem) brightness(70%)"),
+      $("header").addClass("hide"),
         $(".swiper-container.menu-swiper").addClass("selected"),
         $(".menu-closer").addClass("selected"),
         $("#menu-prev").addClass("selected"),
@@ -54,8 +54,8 @@ function dataBox() {
   }),
   $(function () {
     $(".menu-div").on("click", ".menu-closer", function () {
+      $("header").removeClass("hide"),
       $("main").css("filter", "blur(0) brightness(100%)"),
-        $("header").css("filter", "blur(0) brightness(100%)"),
         $(".swiper-container.menu-swiper").removeClass("selected"),
         $(".menu-closer").removeClass("selected"),
         $("#menu-prev").removeClass("selected"),
@@ -65,7 +65,7 @@ function dataBox() {
   $(function () {
     $(".cta-burger").on("click", ".menu", function () {
       $("main").css("filter", "blur(1rem) brightness(70%)");
-      $("header").css("filter", "blur(1rem) brightness(70%)");
+      $("header").addClass("hide");
       $(".swiper-container.menu-swiper").addClass("selected");
       $(".menu-closer").addClass("selected");
       $("#menu-prev").addClass("selected");
