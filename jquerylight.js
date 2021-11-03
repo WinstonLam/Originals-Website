@@ -43,36 +43,15 @@ function dataBox() {
   $(window).on("load", loader),
   $(window).on("load", textAnimation),
   $(function () {
-    $(".cta").on("click", ".menu", function () {
-      $("main").css("filter", "blur(1rem) brightness(70%)"),
-      $("header").addClass("hide"),
-        $(".swiper-container.menu-swiper").addClass("selected"),
-        $(".menu-closer").addClass("selected"),
-        $("#menu-prev").addClass("selected"),
-        $("#menu-next").addClass("selected");
-    });
-  }),
-  $(function () {
     $(".menu-div").on("click", ".menu-closer", function () {
       $("header").removeClass("hide"),
-      $("main").css("filter", "blur(0) brightness(100%)"),
+        $("main").css("filter", "blur(0) brightness(100%)"),
         $(".swiper-container.menu-swiper").removeClass("selected"),
         $(".menu-closer").removeClass("selected"),
         $("#menu-prev").removeClass("selected"),
         $("#menu-next").removeClass("selected");
     });
   }),
-  $(function () {
-    $(".cta-burger").on("click", ".menu", function () {
-      $("main").css("filter", "blur(1rem) brightness(70%)");
-      $("header").addClass("hide");
-      $(".swiper-container.menu-swiper").addClass("selected");
-      $(".menu-closer").addClass("selected");
-      $("#menu-prev").addClass("selected");
-      $("#menu-next").addClass("selected");
-    });
-  }),
-  
   $(function () {
     $(".video").on("click", ".playbttn", function () {
       var video = $("#youtube").attr("src");

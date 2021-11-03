@@ -46,7 +46,7 @@
 				</div>
 				
 				<div class="socialdiv">
-				<input class= 'socialinp' type = 'image' src="./images/facebook.svg" alt="socials">
+				<input class= 'socialinp' type = 'image' src="./images/facebook.png" alt="socials">
 				<ul>	
 					<li><a href='#'><img src ='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c5c450d3399eea5623e5c6_facebook-app-symbol.png' style = "width:5vh; height:5vh;"/></a></li>
 					<li><a href='#'><img src ='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c5c4d0b14d27fbf8f09602_instagram.png' style = "width:5vh; height:5vh;"/></a></li>
@@ -57,51 +57,6 @@
 	
 		</header>
 		<div class="filler_header"></div>
-		
-
-		<div class="menu-div">
-		<div class="swiper-container menu-swiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide" id= 'menu-slide'>
-					<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6122186352b92771d304fa16_Menu%20design%202020%20A3%20(NL)-01.png">
-					<img id = 'db-view' src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/6122186552b9273c3604fa17_Menu%20design%202020%20A3%20(NL)-02.png">
-				</div> 
-				<div class="swiper-slide" id= 'menu-slide'>
-					<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/612218656eeeddb7cd898a3c_Menu%20design%202020%20A3%20(NL)-03.png">
-					<img id = 'db-view' src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/61221865411cba774cf61827_Menu%20design%202020%20A3%20(NL)-04.png"> 
-			  	</div>
-				<div class="swiper-slide" id= 'menu-slide'>	
-					<img src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/61221865770f02c8d34963bc_Menu%20design%202020%20A3%20(NL)-05.png">
-					<img id = 'db-view' src="https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/61221863e6fa2a172da237cb_Menu%20design%202020%20A3%20(NL)-06.png"> 
-				</div>
-			</div>
-			</div>
-			<div class="swiper-button-prev" id="menu-prev"></div>
-			<div class="swiper-button-next" id="menu-next"></div>
-			
-			<div class='menu-closer'>
-				<p>Click here to close</p>
-			</div>
-
-		  </div>
-
-		<script>
-		  var swiper = new Swiper('.swiper-container', {
-			loop: true,	
-			
-			navigation: {
-			  nextEl: '.swiper-button-next',
-			  prevEl: '.swiper-button-prev',
-			},
-			scrollbar: {
-			  el: '.swiper-scrollbar',
-			},
-		  });
-		</script>
-
-
-
-
 		
 			<div id="transparent">
 				<div class="closediv">
@@ -118,7 +73,7 @@
 						<button data-for= 'findus' id="burger-link" onclick= "window.location.href='#section2'">Find Us</button>
 					</div>
 				<div class="cta-burger">
-					<button class="menu">Our Menu</button>
+					<button class="menu" onclick=" window.open('images/Originals.pdf','_blank')"> Our Menu</button>
 					<button class="order"onclick= "window.location.href='https://www.originalsfood.nl/'">Order Now</button>
 				</div>
 				</div>	
@@ -147,7 +102,7 @@
 							</p>
 						</div>	
 						<div class="cta">
-							<button class="menu">Our Menu</button>
+							<button class="menu" onclick=" window.open('images/Originals.pdf','_blank')"> Our Menu</button>
 							<button class="order"onclick= "window.location.href='https://www.originalsfood.nl/'">Order Now</button>
 						</div>
 					</div>
@@ -393,7 +348,7 @@
 								</div>
 								<div id='contactus'>
 								
-									<div id='contact1' class='Active'>
+									<div id='contact1' class='Active' onclick= "window.location.href='tel:+31203378128'">
 										<div class='contact_img Active'>
 										<img src='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c4feb3e74f6b7df71a554d_telephone.png'>
 										</div>
@@ -402,17 +357,17 @@
 										</div>
 									</div>
 
-									<div id='contact2' class='Active'>
+									<div id='contact2' class='Active' onclick= "window.location.href='mailto:info@originalsfood.nl'">
 										<div class="contact_img Active">
 										<img src='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c502289e78884dd76a9f52_telephone.png'>
 										</div>
 										<div class="contact_p Active">
-										<p>info@originalsfood.nl</p>
+											<p>info@originalsfood.nl</p>
 										</div>
 									</div>
 									
 									<div id='contact3' class='Active'>
-										<div id='fb' class='Active'>
+										<div id='fb' class='Active' onclick= "window.location.href='https://www.facebook.com/Originalsfood'">
 											<div class="contact_img Active">
 												<img src='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c5c450d3399eea5623e5c6_facebook-app-symbol.png'>
 											</div>
@@ -420,7 +375,7 @@
 												<p>originalsfood_</p>
 											</div>
 										</div>
-										<div id='insta' class='Active'>
+										<div id='insta' class='Active' onclick="window.location.href='https://www.instagram.com/originalsfood_'">
 											<div class="contact_img Active">
 												<img src='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c5c4d0b14d27fbf8f09602_instagram.png'>
 											</div>
@@ -443,7 +398,7 @@
 				<section class="section3">
 					<div class="footerwrapper">
 					<div class='footerlogo'>
-						 <img src='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/5fdf2f0d60a0da19271705c5_Originals%20logo(final)-01%5B5489%5D.png'/>
+						 <img onclick= "window.location.href='#header'" src='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/5fdf2f0d60a0da19271705c5_Originals%20logo(final)-01%5B5489%5D.png'/>
 					</div>
 					<div class='adresinfo'>
 						<h1>Adres</h1> 
@@ -454,7 +409,7 @@
 					</div>
 					<div class='footerlinks'>
 						<div id="footer-links">
-							<button class ="footer-link" id="footer-link1" onclick= "window.location.href='#'">Menu</button>
+							<button class ="footer-link" id="footer-link1"  onclick=" window.open('images/Originals.pdf','_blank')">Menu</button>
 							<button class ="footer-link" id="footer-link2" onclick= "window.location.href='https://www.originalsfood.nl/'">Order</button>	
 							<button data-for= 'gallerydiv' class ="footer-link" id="footer-link3" onclick= "window.location.href='#section2'">Gallery</button>
 							<button data-for= 'aboutus' class ="footer-link" id="footer-link4" onclick= "window.location.href='#section2'">About Us</button>
@@ -467,10 +422,10 @@
 						<img src ='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60ded13330af532bc34fed64_motto.png'/>
 						</div>
 						<div class='footer-socials'>
-						<a class = 'footer-social'  href="#"> 
+						<a class = 'footer-social'  href="https://www.instagram.com/originalsfood_">
 							<img src ='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c5c4d0b14d27fbf8f09602_instagram.png'/>
 						</a>
-						<a class = 'footer-social'  href="#"> 
+						<a class = 'footer-social'  href="https://www.facebook.com/Originalsfood"> 
 							<img src ='https://uploads-ssl.webflow.com/5fdd088e571ea0142dedc7eb/60c5c450d3399eea5623e5c6_facebook-app-symbol.png'/>
 						</a>
 						</div>
