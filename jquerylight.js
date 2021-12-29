@@ -141,9 +141,13 @@ function dataBox() {
           .removeClass("Active");
     });
   }),
-  $(window).on("scroll resize", function () {
-    var e = window.pageYOffset;
-    $(window).width() < 751 && 3 < e
-      ? $("#header").addClass("active")
-      : $("#header").removeClass("active");
+  $(window).on("scroll", function () {
+   
+    if ($(window).scrollTop() > 4) {
+      $("#header").addClass("active");
+    };
+    if ($(window).scrollTop() <= 4) {
+      $("#header").removeClass("active");
+    };
+     
   });
