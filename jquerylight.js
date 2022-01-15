@@ -52,23 +52,7 @@ function dataBox() {
         $("#menu-next").removeClass("selected");
     });
   }),
-  $(function () {
-    $(".video").on("click", ".playbttn", function () {
-      var video = $("#youtube").attr("src");
-      $(this).addClass("Hide"),
-        $(".iframe-wrapper").addClass("Show"),
-        $("#youtube").attr("src", `${video}&autoplay=1`);
-    });
-  }),
-  $(function () {
-    $("main").on("click", ".iframe-wrapper.Show", function () {
-      var video = $("#youtube").attr("src");
-      var video = video.slice(0, -11);
-      $(this).removeClass("Show"),
-        $(".playbttn").removeClass("Hide"),
-        $("#youtube").attr("src", `${video}`);
-    });
-  }),
+
   $(function () {
     $("#glass-link").on(
       "click",
